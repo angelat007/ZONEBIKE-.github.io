@@ -1,0 +1,54 @@
+:root {
+    --color-fondo: rgba(223, 223, 223, 0.816);
+    --texr-color: rgb(31, 31, 31);
+    --shadow-fondo: rgba(101, 101, 101, 0.847);
+    --button-color: rgb(31, 31, 31);
+    --button-text: rgb(255, 255, 255);
+    --active-buton: rgb(47, 47, 47);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--texr-color);
+    font-family: "WDXL Lubrifont TC", Arial, Helvetica, sans-serif;
+    padding: 20px;
+    display: block;
+}
+
+.container1{
+    margin-top: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#divp{
+    gap: 20px;
+    padding: 20px;  
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: var(--button-color);
+    color: var(--button-text);
+    box-shadow: 1px 2px 6px var(--shadow-fondo);
+    width: 130px;
+    height: 55px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 0px;
+    font-size: 1.2em;
+}
+
+/*animacion buton color*/
+button:hover {
+    background-color: #0ebcd4;
+    cursor: pointer;
+}
